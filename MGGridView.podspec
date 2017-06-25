@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MGGridView'
-  s.version          = '0.1.0'
-  s.summary          = 'MGGridView is simple grid view.'
+  s.version          = '0.1.1'
+  s.summary          = 'MGGridView is an easy and simple grid view.'
   s.homepage         = 'https://github.com/magi82/MGGridView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'magi82' => 'bkhwang82@gmail.com' }
