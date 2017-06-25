@@ -164,4 +164,4 @@ magi82, bkhwang82@gmail.com
 
 ## License
 
-** MGGridView** is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+**MGGridView** is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
