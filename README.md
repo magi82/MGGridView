@@ -6,23 +6,23 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/MGGridView.svg?style=flat)](http://cocoapods.org/pods/MGGridView)
 
-MGGridView 는 콜렉션뷰의 조합으로 만들어진 그리드 뷰입니다.<br>
-애플의 콜렉션뷰 방식으로 간단하고 쉽게 구현이 가능합니다. :sunny:
+MGGridView is a grid view created by a combination of collection views.<br>
+Apple's collection view method is simple and easy to implement. :sunny:
 
-MGGridView는 스토리보드에서 생성할수 있습니다.<br>
-하지만 Carthage에서는 프로그램적으로만 가능합니다.<br>
+MGGridView can be created in the storyboard.<br>
+In Carthage, however, it is programmatically only.<br>
 [Carthage Issues #763](https://github.com/Carthage/Carthage/issues/763)
 
-column 뷰셀은 스토리보드에서의 등록을 지원하지 않습니다.<br>
-프로그램적으로 구현하거나 xib로 구현할수 있습니다.
+The column cell does not support registration in the storyboard.<br>
+You can implement it programmatically or with xib.
 
 ## Sample
 
-<img src="https://github.com/magi82/MGStarRatingView/blob/master/Resources/sample.gif?raw=true" width="240">
+<img src="https://github.com/magi82/MGGridView/blob/master/Resources/sample.gif?raw=true" width="240">
 
 
 ## Usage
-- MGGridView와 데이터소스에 필요한 데이터를 선언합니다.
+- Declare the MGGridView, and add the data to the data source.
 
 ```swift
 var gridView: MGGridView? = nil
@@ -39,7 +39,7 @@ let menus: [[String]] = [
   ]
 ```
 
-- MGGridView를 생성하고 속성을 설정합니다.
+- Create an MGGridView and configure.
 
 ```swift
 gridView = MGGridView(frame: UIScreen.main.bounds,
@@ -53,20 +53,20 @@ if let grid = gridView {
 }
 ```
 
-- MGGridView의 데이터소스와 델리게이트를 구현합니다.<br>
-  콜렉션뷰와 똑같이 구현하면 됩니다.
-- **중요!!!!** 여기 중요한 내용이 있습니다.<br>
-  그리드뷰의 column을 위한 설정을 해야 합니다.
+- Implement a data source and delegate for MGGridView.<br>
+  You can do the same as the collection view.
+- **Important!!!!** Here's what's important.<br>
+  You need to config for the column in the grid view.
   
 ```swift
-// 델리게이트와 데이터소스 구현
+// Implementing delegate and data source
 extension ViewController: MGGridViewDelegate, MGGridViewDataSource {
   func gridView(_ gridView: UICollectionView,
                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = gridView.dequeueReusableCell(withReuseIdentifier: "row",
                                             for: indexPath) as! MGGridViewCell
     
-    // 중요!! column을 위한 설정을 해야 합니다.
+    // Important!! You need to configure for column.
     cell.configure { view, layout in
       layout.scrollDirection = .horizontal
       
@@ -86,10 +86,10 @@ extension ViewController: MGGridViewDelegate, MGGridViewDataSource {
 }
 ```
 
-- 필요하다면 Layout 델리게이트도 구현합니다.
+- If necessary, also implement a Layout delegate.
 
 ```swift
-// row 레이아웃 델리게이트 구현
+// Row layout delegate implementation
 extension ViewController: MGGridViewDelegateFlowLayout {
   func gridView(_ gridView: UICollectionView,
                 layout gridViewLayout: UICollectionViewLayout,
@@ -99,16 +99,16 @@ extension ViewController: MGGridViewDelegateFlowLayout {
 }
 ```
 
-- MGGridView의 column cell에 대한 델리게이트를 구현합니다.
-- **중요!!!!** 여기 중요한 내용이 있습니다.<br>
-  델리게이트 구현시 collectionView.tag는 해당 그리드뷰의 레코드 인덱스 입니다.
+- Implements a delegate for the column cell of MGGridView.
+- **Important!!!!** Here's what's important.<br>
+  In a delegate implementation, collectionView.tag is the row index of the corresponding grid view.
 
 ```swift
-// column에 대한 델리게이트 구현
+// Delegate implementation for column
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView,
                       numberOfItemsInSection section: Int) -> Int {
-    // tag는 그리드뷰의 레코드 인덱스 입니다.
+    // Tag is the row index of the grid view.
     return menus[collectionView.tag].count
   }
   
@@ -123,10 +123,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 }
 ```
 
-- 마찬가지로 필요시 Layout 델리게이트도 구현하면 됩니다.
+- You can also implement the Layout delegate as needed.
 
 ```swift
-// row 레이아웃 델리게이트 구현
+// Row layout delegate implementation
 extension ViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     return CGSize(width: 80, height: 80)
