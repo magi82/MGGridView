@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58A4E141CB495FA912E23C82 /* Pods_MGGridViewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5766BCE94A1E34585C72E5 /* Pods_MGGridViewTest.framework */; };
+		5C2814D85C3C9CACB99BFC8A /* Pods_MGGridViewTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7DA35F76AF9E278E7DCF88 /* Pods_MGGridViewTestUITests.framework */; };
+		871E46FD32ABFD32CA63480E /* Pods_MGGridViewTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1F563AD51F0A72559EFAB7 /* Pods_MGGridViewTestTests.framework */; };
+		D804A8F31EFFFB1E00AA6CF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804A8F21EFFFB1E00AA6CF2 /* AppDelegate.swift */; };
+		D804A8F51EFFFB1E00AA6CF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804A8F41EFFFB1E00AA6CF2 /* ViewController.swift */; };
+		D804A8F81EFFFB1E00AA6CF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D804A8F61EFFFB1E00AA6CF2 /* Main.storyboard */; };
+		D804A8FA1EFFFB1E00AA6CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D804A8F91EFFFB1E00AA6CF2 /* Assets.xcassets */; };
+		D804A8FD1EFFFB1E00AA6CF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D804A8FB1EFFFB1E00AA6CF2 /* LaunchScreen.storyboard */; };
+		D804A9081EFFFB1E00AA6CF2 /* MGGridViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804A9071EFFFB1E00AA6CF2 /* MGGridViewTestTests.swift */; };
+		D804A9131EFFFB1E00AA6CF2 /* MGGridViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804A9121EFFFB1E00AA6CF2 /* MGGridViewTestUITests.swift */; };
+		D885FEBA1F000FB600F1E518 /* ColumnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D885FEB81F000FB600F1E518 /* ColumnCollectionViewCell.swift */; };
+		D885FEBB1F000FB600F1E518 /* ColumnCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D885FEB91F000FB600F1E518 /* ColumnCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D804A9041EFFFB1E00AA6CF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804A8E71EFFFB1E00AA6CF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D804A8EE1EFFFB1E00AA6CF2;
+			remoteInfo = MGGridViewTest;
+		};
+		D804A90F1EFFFB1E00AA6CF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804A8E71EFFFB1E00AA6CF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D804A8EE1EFFFB1E00AA6CF2;
+			remoteInfo = MGGridViewTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B7DA35F76AF9E278E7DCF88 /* Pods_MGGridViewTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGGridViewTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5766BCE94A1E34585C72E5 /* Pods_MGGridViewTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGGridViewTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465E0D7BDB39E2DD366D5256 /* Pods-MGGridViewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGGridViewTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGGridViewTest/Pods-MGGridViewTest.release.xcconfig"; sourceTree = "<group>"; };
+		67D1FB4AC4373FFCD8C925D0 /* Pods-MGGridViewTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGGridViewTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGGridViewTestTests/Pods-MGGridViewTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A92F1D174DFD799C143CBD46 /* Pods-MGGridViewTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGGridViewTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGGridViewTestUITests/Pods-MGGridViewTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0D2B551D2FA385A780DF21 /* Pods-MGGridViewTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGGridViewTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGGridViewTestUITests/Pods-MGGridViewTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D0F843D54E4395CA865C55A2 /* Pods-MGGridViewTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGGridViewTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGGridViewTest/Pods-MGGridViewTest.debug.xcconfig"; sourceTree = "<group>"; };
+		D804A8EF1EFFFB1E00AA6CF2 /* MGGridViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGGridViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D804A8F21EFFFB1E00AA6CF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D804A8F41EFFFB1E00AA6CF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D804A8F71EFFFB1E00AA6CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D804A8F91EFFFB1E00AA6CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D804A8FC1EFFFB1E00AA6CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D804A8FE1EFFFB1E00AA6CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D804A9031EFFFB1E00AA6CF2 /* MGGridViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGGridViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D804A9071EFFFB1E00AA6CF2 /* MGGridViewTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGGridViewTestTests.swift; sourceTree = "<group>"; };
+		D804A9091EFFFB1E00AA6CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D804A90E1EFFFB1E00AA6CF2 /* MGGridViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGGridViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D804A9121EFFFB1E00AA6CF2 /* MGGridViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGGridViewTestUITests.swift; sourceTree = "<group>"; };
+		D804A9141EFFFB1E00AA6CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D885FEB81F000FB600F1E518 /* ColumnCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCollectionViewCell.swift; sourceTree = "<group>"; };
+		D885FEB91F000FB600F1E518 /* ColumnCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColumnCollectionViewCell.xib; sourceTree = "<group>"; };
+		DB1F563AD51F0A72559EFAB7 /* Pods_MGGridViewTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGGridViewTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E701335B787D6D2CB6610920 /* Pods-MGGridViewTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGGridViewTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGGridViewTestTests/Pods-MGGridViewTestTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D804A8EC1EFFFB1E00AA6CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A4E141CB495FA912E23C82 /* Pods_MGGridViewTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D804A9001EFFFB1E00AA6CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				871E46FD32ABFD32CA63480E /* Pods_MGGridViewTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D804A90B1EFFFB1E00AA6CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C2814D85C3C9CACB99BFC8A /* Pods_MGGridViewTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57B4B4569EF0758162559CA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E5766BCE94A1E34585C72E5 /* Pods_MGGridViewTest.framework */,
+				DB1F563AD51F0A72559EFAB7 /* Pods_MGGridViewTestTests.framework */,
+				2B7DA35F76AF9E278E7DCF88 /* Pods_MGGridViewTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A81E2DFFDE1D2593F9BFEC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0F843D54E4395CA865C55A2 /* Pods-MGGridViewTest.debug.xcconfig */,
+				465E0D7BDB39E2DD366D5256 /* Pods-MGGridViewTest.release.xcconfig */,
+				67D1FB4AC4373FFCD8C925D0 /* Pods-MGGridViewTestTests.debug.xcconfig */,
+				E701335B787D6D2CB6610920 /* Pods-MGGridViewTestTests.release.xcconfig */,
+				A92F1D174DFD799C143CBD46 /* Pods-MGGridViewTestUITests.debug.xcconfig */,
+				AE0D2B551D2FA385A780DF21 /* Pods-MGGridViewTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D804A8E61EFFFB1E00AA6CF2 = {
+			isa = PBXGroup;
+			children = (
+				D804A8F11EFFFB1E00AA6CF2 /* MGGridViewTest */,
+				D804A9061EFFFB1E00AA6CF2 /* MGGridViewTestTests */,
+				D804A9111EFFFB1E00AA6CF2 /* MGGridViewTestUITests */,
+				D804A8F01EFFFB1E00AA6CF2 /* Products */,
+				5A81E2DFFDE1D2593F9BFEC3 /* Pods */,
+				57B4B4569EF0758162559CA0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D804A8F01EFFFB1E00AA6CF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D804A8EF1EFFFB1E00AA6CF2 /* MGGridViewTest.app */,
+				D804A9031EFFFB1E00AA6CF2 /* MGGridViewTestTests.xctest */,
+				D804A90E1EFFFB1E00AA6CF2 /* MGGridViewTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D804A8F11EFFFB1E00AA6CF2 /* MGGridViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				D804A8F21EFFFB1E00AA6CF2 /* AppDelegate.swift */,
+				D804A8F41EFFFB1E00AA6CF2 /* ViewController.swift */,
+				D885FEB81F000FB600F1E518 /* ColumnCollectionViewCell.swift */,
+				D885FEB91F000FB600F1E518 /* ColumnCollectionViewCell.xib */,
+				D804A8F61EFFFB1E00AA6CF2 /* Main.storyboard */,
+				D804A8F91EFFFB1E00AA6CF2 /* Assets.xcassets */,
+				D804A8FB1EFFFB1E00AA6CF2 /* LaunchScreen.storyboard */,
+				D804A8FE1EFFFB1E00AA6CF2 /* Info.plist */,
+			);
+			path = MGGridViewTest;
+			sourceTree = "<group>";
+		};
+		D804A9061EFFFB1E00AA6CF2 /* MGGridViewTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				D804A9071EFFFB1E00AA6CF2 /* MGGridViewTestTests.swift */,
+				D804A9091EFFFB1E00AA6CF2 /* Info.plist */,
+			);
+			path = MGGridViewTestTests;
+			sourceTree = "<group>";
+		};
+		D804A9111EFFFB1E00AA6CF2 /* MGGridViewTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D804A9121EFFFB1E00AA6CF2 /* MGGridViewTestUITests.swift */,
+				D804A9141EFFFB1E00AA6CF2 /* Info.plist */,
+			);
+			path = MGGridViewTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D804A8EE1EFFFB1E00AA6CF2 /* MGGridViewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D804A9171EFFFB1E00AA6CF2 /* Build configuration list for PBXNativeTarget "MGGridViewTest" */;
+			buildPhases = (
+				063A3C71722DA9C731ABA8AD /* [CP] Check Pods Manifest.lock */,
+				D804A8EB1EFFFB1E00AA6CF2 /* Sources */,
+				D804A8EC1EFFFB1E00AA6CF2 /* Frameworks */,
+				D804A8ED1EFFFB1E00AA6CF2 /* Resources */,
+				28944339EC9E7FA70A42670F /* [CP] Embed Pods Frameworks */,
+				47A8ABF7C5A4F588CCCE0B31 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGGridViewTest;
+			productName = MGGridViewTest;
+			productReference = D804A8EF1EFFFB1E00AA6CF2 /* MGGridViewTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D804A9021EFFFB1E00AA6CF2 /* MGGridViewTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D804A91A1EFFFB1E00AA6CF2 /* Build configuration list for PBXNativeTarget "MGGridViewTestTests" */;
+			buildPhases = (
+				F34207465409E33D262CBDE7 /* [CP] Check Pods Manifest.lock */,
+				D804A8FF1EFFFB1E00AA6CF2 /* Sources */,
+				D804A9001EFFFB1E00AA6CF2 /* Frameworks */,
+				D804A9011EFFFB1E00AA6CF2 /* Resources */,
+				450C9E2D78A071463AB96676 /* [CP] Embed Pods Frameworks */,
+				1928C3A3458AA30CE9448C57 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D804A9051EFFFB1E00AA6CF2 /* PBXTargetDependency */,
+			);
+			name = MGGridViewTestTests;
+			productName = MGGridViewTestTests;
+			productReference = D804A9031EFFFB1E00AA6CF2 /* MGGridViewTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D804A90D1EFFFB1E00AA6CF2 /* MGGridViewTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D804A91D1EFFFB1E00AA6CF2 /* Build configuration list for PBXNativeTarget "MGGridViewTestUITests" */;
+			buildPhases = (
+				51BCA9C0CAEE4A1FE330B358 /* [CP] Check Pods Manifest.lock */,
+				D804A90A1EFFFB1E00AA6CF2 /* Sources */,
+				D804A90B1EFFFB1E00AA6CF2 /* Frameworks */,
+				D804A90C1EFFFB1E00AA6CF2 /* Resources */,
+				A25E33EDD08CCDE9C52975CA /* [CP] Embed Pods Frameworks */,
+				250A47B57BFA522B5D0A0C5D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D804A9101EFFFB1E00AA6CF2 /* PBXTargetDependency */,
+			);
+			name = MGGridViewTestUITests;
+			productName = MGGridViewTestUITests;
+			productReference = D804A90E1EFFFB1E00AA6CF2 /* MGGridViewTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D804A8E71EFFFB1E00AA6CF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = magi82;
+				TargetAttributes = {
+					D804A8EE1EFFFB1E00AA6CF2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					D804A9021EFFFB1E00AA6CF2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D804A8EE1EFFFB1E00AA6CF2;
+					};
+					D804A90D1EFFFB1E00AA6CF2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D804A8EE1EFFFB1E00AA6CF2;
+					};
+				};
+			};
+			buildConfigurationList = D804A8EA1EFFFB1E00AA6CF2 /* Build configuration list for PBXProject "MGGridViewTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D804A8E61EFFFB1E00AA6CF2;
+			productRefGroup = D804A8F01EFFFB1E00AA6CF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D804A8EE1EFFFB1E00AA6CF2 /* MGGridViewTest */,
+				D804A9021EFFFB1E00AA6CF2 /* MGGridViewTestTests */,
+				D804A90D1EFFFB1E00AA6CF2 /* MGGridViewTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D804A8ED1EFFFB1E00AA6CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804A8FD1EFFFB1E00AA6CF2 /* LaunchScreen.storyboard in Resources */,
+				D804A8FA1EFFFB1E00AA6CF2 /* Assets.xcassets in Resources */,
+				D885FEBB1F000FB600F1E518 /* ColumnCollectionViewCell.xib in Resources */,
+				D804A8F81EFFFB1E00AA6CF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D804A9011EFFFB1E00AA6CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D804A90C1EFFFB1E00AA6CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		063A3C71722DA9C731ABA8AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1928C3A3458AA30CE9448C57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGGridViewTestTests/Pods-MGGridViewTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		250A47B57BFA522B5D0A0C5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGGridViewTestUITests/Pods-MGGridViewTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28944339EC9E7FA70A42670F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGGridViewTest/Pods-MGGridViewTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		450C9E2D78A071463AB96676 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGGridViewTestTests/Pods-MGGridViewTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47A8ABF7C5A4F588CCCE0B31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGGridViewTest/Pods-MGGridViewTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51BCA9C0CAEE4A1FE330B358 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A25E33EDD08CCDE9C52975CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGGridViewTestUITests/Pods-MGGridViewTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F34207465409E33D262CBDE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D804A8EB1EFFFB1E00AA6CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804A8F51EFFFB1E00AA6CF2 /* ViewController.swift in Sources */,
+				D804A8F31EFFFB1E00AA6CF2 /* AppDelegate.swift in Sources */,
+				D885FEBA1F000FB600F1E518 /* ColumnCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D804A8FF1EFFFB1E00AA6CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804A9081EFFFB1E00AA6CF2 /* MGGridViewTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D804A90A1EFFFB1E00AA6CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804A9131EFFFB1E00AA6CF2 /* MGGridViewTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D804A9051EFFFB1E00AA6CF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D804A8EE1EFFFB1E00AA6CF2 /* MGGridViewTest */;
+			targetProxy = D804A9041EFFFB1E00AA6CF2 /* PBXContainerItemProxy */;
+		};
+		D804A9101EFFFB1E00AA6CF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D804A8EE1EFFFB1E00AA6CF2 /* MGGridViewTest */;
+			targetProxy = D804A90F1EFFFB1E00AA6CF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D804A8F61EFFFB1E00AA6CF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D804A8F71EFFFB1E00AA6CF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D804A8FB1EFFFB1E00AA6CF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D804A8FC1EFFFB1E00AA6CF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D804A9151EFFFB1E00AA6CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D804A9161EFFFB1E00AA6CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D804A9181EFFFB1E00AA6CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F843D54E4395CA865C55A2 /* Pods-MGGridViewTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MGGridViewTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.magi82.MGGridViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D804A9191EFFFB1E00AA6CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465E0D7BDB39E2DD366D5256 /* Pods-MGGridViewTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MGGridViewTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.magi82.MGGridViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D804A91B1EFFFB1E00AA6CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D1FB4AC4373FFCD8C925D0 /* Pods-MGGridViewTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MGGridViewTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.magi82.MGGridViewTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGGridViewTest.app/MGGridViewTest";
+			};
+			name = Debug;
+		};
+		D804A91C1EFFFB1E00AA6CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E701335B787D6D2CB6610920 /* Pods-MGGridViewTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MGGridViewTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.magi82.MGGridViewTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGGridViewTest.app/MGGridViewTest";
+			};
+			name = Release;
+		};
+		D804A91E1EFFFB1E00AA6CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92F1D174DFD799C143CBD46 /* Pods-MGGridViewTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MGGridViewTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.magi82.MGGridViewTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MGGridViewTest;
+			};
+			name = Debug;
+		};
+		D804A91F1EFFFB1E00AA6CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0D2B551D2FA385A780DF21 /* Pods-MGGridViewTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MGGridViewTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.magi82.MGGridViewTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MGGridViewTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D804A8EA1EFFFB1E00AA6CF2 /* Build configuration list for PBXProject "MGGridViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D804A9151EFFFB1E00AA6CF2 /* Debug */,
+				D804A9161EFFFB1E00AA6CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D804A9171EFFFB1E00AA6CF2 /* Build configuration list for PBXNativeTarget "MGGridViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D804A9181EFFFB1E00AA6CF2 /* Debug */,
+				D804A9191EFFFB1E00AA6CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D804A91A1EFFFB1E00AA6CF2 /* Build configuration list for PBXNativeTarget "MGGridViewTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D804A91B1EFFFB1E00AA6CF2 /* Debug */,
+				D804A91C1EFFFB1E00AA6CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D804A91D1EFFFB1E00AA6CF2 /* Build configuration list for PBXNativeTarget "MGGridViewTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D804A91E1EFFFB1E00AA6CF2 /* Debug */,
+				D804A91F1EFFFB1E00AA6CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D804A8E71EFFFB1E00AA6CF2 /* Project object */;
+}

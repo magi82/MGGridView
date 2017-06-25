@@ -1,0 +1,6 @@
+framework module Pods_MGGridViewTestTests {
+  umbrella header "Pods-MGGridViewTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

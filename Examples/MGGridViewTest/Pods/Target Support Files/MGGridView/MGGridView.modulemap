@@ -1,0 +1,6 @@
+framework module MGGridView {
+  umbrella header "MGGridView-umbrella.h"
+
+  export *
+  module * { export * }
+}
