@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MGGridViewCell: UICollectionViewCell {
+public class MGGridViewCell: UICollectionViewCell {
   
   private var collectionView: UICollectionView? = nil
 

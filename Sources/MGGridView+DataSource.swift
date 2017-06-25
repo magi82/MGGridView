@@ -2,7 +2,7 @@
 //  MGGridView+DataSource.swift
 //  collectionviewInTableViewTest
 //
-//  Created by 황병국 on 23/06/2017.
+//  Created by ByungKook Hwang on 21/06/2017.
 //  Copyright © 2017 magi. All rights reserved.
 //
 
@@ -34,12 +34,12 @@ public protocol MGGridDataSource: NSObjectProtocol {
 extension MGGridDataSource {
   
   @available(iOS 6.0, *)
-  func numberOfSectionsFromGridView(in collectionView: UICollectionView) -> Int {
+  public func numberOfSectionsFromGridView(in collectionView: UICollectionView) -> Int {
     return 1
   }
   
   @available(iOS 6.0, *)
-  func gridView(_ gridView: UICollectionView,
+  public func gridView(_ gridView: UICollectionView,
                 viewForSupplementaryElementOfKind kind: String,
                 at indexPath: IndexPath) -> UICollectionReusableView {
     gridView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: "empty")
@@ -48,10 +48,10 @@ extension MGGridDataSource {
   }
   
   @available(iOS 9.0, *)
-  func gridView(_ gridView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
+  public func gridView(_ gridView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
     return false
   }
   
   @available(iOS 9.0, *)
-  func gridView(_ gridView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {}
+  public func gridView(_ gridView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {}
 }

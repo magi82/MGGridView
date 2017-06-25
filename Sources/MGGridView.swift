@@ -16,7 +16,7 @@ public class MGGridView: UICollectionView {
   fileprivate weak var gridDataSource: MGGridDataSource? = nil
   fileprivate weak var gridDelegateFlowLayout: MGGridDelegateFlowLayout? = nil
 
-  fileprivate var storedOffsets = [Int: CGFloat]()
+  var storedOffsets = [Int: CGFloat]()
 
   override public init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
     super.init(frame: frame, collectionViewLayout: layout)
@@ -26,7 +26,7 @@ public class MGGridView: UICollectionView {
     fatalError("init(coder:) has not been implemented")
   }
 
-  func configure<D: UICollectionViewDelegate
+  public func configure<D: UICollectionViewDelegate
                     & UICollectionViewDataSource
                     & MGGridDelegate
                     & MGGridDataSource>(delegate: D) {
@@ -39,7 +39,7 @@ public class MGGridView: UICollectionView {
     gridDataSource = delegate
   }
 
-  func configure<D: UICollectionViewDelegate
+  public func configure<D: UICollectionViewDelegate
                     & UICollectionViewDataSource
                     & MGGridDelegate
                     & MGGridDataSource
@@ -57,13 +57,11 @@ public class MGGridView: UICollectionView {
 
 extension MGGridView: UICollectionViewDataSource {
 
-  public func collectionView(_ collectionView: UICollectionView,
-                             numberOfItemsInSection section: Int) -> Int {
+  public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return gridDataSource?.gridView(collectionView, numberOfItemsInSection: section) ?? 0
   }
 
-  public func collectionView(_ collectionView: UICollectionView,
-                             cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+  public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
     guard let cell = gridDataSource?.gridView(collectionView, cellForItemAt: indexPath) else {
       collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "empty")

@@ -41,7 +41,7 @@ public protocol MGGridDelegateFlowLayout: NSObjectProtocol {
 extension MGGridDelegateFlowLayout {
 
   @available(iOS 6.0, *)
-  func gridView(_ gridView: UICollectionView,
+  public func gridView(_ gridView: UICollectionView,
                 layout gridViewLayout: UICollectionViewLayout,
                 sizeForItemAt indexPath: IndexPath) -> CGSize {
     if let layout = gridViewLayout as? UICollectionViewFlowLayout {
@@ -52,7 +52,7 @@ extension MGGridDelegateFlowLayout {
   }
 
   @available(iOS 6.0, *)
-  func gridView(_ gridView: UICollectionView,
+  public func gridView(_ gridView: UICollectionView,
                 layout gridViewLayout: UICollectionViewLayout,
                 insetForSectionAt section: Int) -> UIEdgeInsets {
     if let layout = gridViewLayout as? UICollectionViewFlowLayout {
@@ -63,7 +63,7 @@ extension MGGridDelegateFlowLayout {
   }
 
   @available(iOS 6.0, *)
-  func gridView(_ gridView: UICollectionView,
+  public func gridView(_ gridView: UICollectionView,
                 layout gridViewLayout: UICollectionViewLayout,
                 minimumLineSpacingForSectionAt section: Int) -> CGFloat {
     if let layout = gridViewLayout as? UICollectionViewFlowLayout {
@@ -74,7 +74,7 @@ extension MGGridDelegateFlowLayout {
   }
 
   @available(iOS 6.0, *)
-  func gridView(_ gridView: UICollectionView,
+  public func gridView(_ gridView: UICollectionView,
                 layout gridViewLayout: UICollectionViewLayout,
                 minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
     if let layout = gridViewLayout as? UICollectionViewFlowLayout {
@@ -85,7 +85,7 @@ extension MGGridDelegateFlowLayout {
   }
 
   @available(iOS 6.0, *)
-  func gridView(_ gridView: UICollectionView,
+  public func gridView(_ gridView: UICollectionView,
                 layout gridViewLayout: UICollectionViewLayout,
                 referenceSizeForHeaderInSection section: Int) -> CGSize {
     if let layout = gridViewLayout as? UICollectionViewFlowLayout {
@@ -96,7 +96,7 @@ extension MGGridDelegateFlowLayout {
   }
 
   @available(iOS 6.0, *)
-  func gridView(_ gridView: UICollectionView,
+  public func gridView(_ gridView: UICollectionView,
                 layout gridViewLayout: UICollectionViewLayout,
                 referenceSizeForFooterInSection section: Int) -> CGSize {
     if let layout = gridViewLayout as? UICollectionViewFlowLayout {
