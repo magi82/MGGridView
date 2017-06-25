@@ -5,7 +5,7 @@
 
 import UIKit
 
-public protocol MGGridDelegateFlowLayout: NSObjectProtocol {
+public protocol MGGridViewDelegateFlowLayout: NSObjectProtocol {
 
   @available(iOS 6.0, *)
   func gridView(_ gridView: UICollectionView,
@@ -38,7 +38,7 @@ public protocol MGGridDelegateFlowLayout: NSObjectProtocol {
                 referenceSizeForFooterInSection section: Int) -> CGSize
 }
 
-extension MGGridDelegateFlowLayout {
+extension MGGridViewDelegateFlowLayout {
 
   @available(iOS 6.0, *)
   public func gridView(_ gridView: UICollectionView,

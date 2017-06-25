@@ -12,9 +12,9 @@ public class MGGridView: UICollectionView {
 
   fileprivate weak var ownerDelegate: UICollectionViewDelegate? = nil
   fileprivate weak var ownerDataSource: UICollectionViewDataSource? = nil
-  fileprivate weak var gridDelegate: MGGridDelegate? = nil
-  fileprivate weak var gridDataSource: MGGridDataSource? = nil
-  fileprivate weak var gridDelegateFlowLayout: MGGridDelegateFlowLayout? = nil
+  fileprivate weak var gridDelegate: MGGridViewDelegate? = nil
+  fileprivate weak var gridDataSource: MGGridViewDataSource? = nil
+  fileprivate weak var gridDelegateFlowLayout: MGGridViewDelegateFlowLayout? = nil
 
   var storedOffsets = [Int: CGFloat]()
 
@@ -28,8 +28,8 @@ public class MGGridView: UICollectionView {
 
   public func configure<D: UICollectionViewDelegate
                     & UICollectionViewDataSource
-                    & MGGridDelegate
-                    & MGGridDataSource>(delegate: D) {
+                    & MGGridViewDelegate
+                    & MGGridViewDataSource>(delegate: D) {
     self.delegate = self
     self.dataSource = self
 
@@ -41,9 +41,9 @@ public class MGGridView: UICollectionView {
 
   public func configure<D: UICollectionViewDelegate
                     & UICollectionViewDataSource
-                    & MGGridDelegate
-                    & MGGridDataSource
-                    & MGGridDelegateFlowLayout>(delegate: D) {
+                    & MGGridViewDelegate
+                    & MGGridViewDataSource
+                    & MGGridViewDelegateFlowLayout>(delegate: D) {
     self.delegate = self
     self.dataSource = self
 

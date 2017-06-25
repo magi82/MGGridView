@@ -5,7 +5,7 @@
 
 import UIKit
 
-public protocol MGGridDelegate: NSObjectProtocol {
+public protocol MGGridViewDelegate: NSObjectProtocol {
   
   @available(iOS 6.0, *)
   func gridView(_ gridView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool
@@ -80,7 +80,7 @@ public protocol MGGridDelegate: NSObjectProtocol {
                 with coordinator: UIFocusAnimationCoordinator)
 }
 
-extension MGGridDelegate {
+extension MGGridViewDelegate {
   
   @available(iOS 6.0, *)
   public func gridView(_ gridView: UICollectionView,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol MGGridDataSource: NSObjectProtocol {
+public protocol MGGridViewDataSource: NSObjectProtocol {
   
   @available(iOS 6.0, *)
   func gridView(_ gridView: UICollectionView, numberOfItemsInSection section: Int) -> Int
@@ -31,7 +31,7 @@ public protocol MGGridDataSource: NSObjectProtocol {
   func gridView(_ gridView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath)
 }
 
-extension MGGridDataSource {
+extension MGGridViewDataSource {
   
   @available(iOS 6.0, *)
   public func numberOfSectionsFromGridView(in collectionView: UICollectionView) -> Int {
